@@ -31,6 +31,11 @@ label {
   display: none;
 }
 
+.hidden-content {
+  //visibility: hidden
+  z-index: -999;
+}
+
 @media (width <= 400px) {
 
   nav {
@@ -83,12 +88,20 @@ label {
     top: 8px;
   }
 
+  .header:has(#burger-toggle:checked) .header__top,
+  .header:has(#burger-toggle:checked) .search {
+    //z-index: -999
+    visibility: hidden
+  }
+
   ul {
     position: fixed;
     left: 0;
     right: 0;
+    top:0;
+    bottom: 0;
     background-color: #151515;
-    padding-top: 300px;
+    padding-top: 100px;
     z-index: -1;
     flex-direction: column;
     text-align: center;
