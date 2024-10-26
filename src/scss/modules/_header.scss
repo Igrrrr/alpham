@@ -7,6 +7,7 @@
   &__container {
     padding: 0 10px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     //width: 100%;
 
@@ -20,13 +21,13 @@
 
   &__bottom {
     display: flex;
-    gap: 17px;
+    gap: 24px;
     //background-color: yellowgreen;
     margin-top: 14px;
-    display: contents;
+    //display: contents;
   }
 
-  &__cell {
+  &__contacts {
     color: $font-white;
     font-size: $subtitle;
     white-space: nowrap;
@@ -35,7 +36,6 @@
       order: 4;
       display: flex;
       align-items: center;
-      gap: 8px;
     }
 
   
@@ -50,6 +50,18 @@
                       linear-gradient(277deg, rgba(255,255,255,1) 0%, rgba(158,149,255,1) 50%, rgba(255,255,255,1) 100%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
+  }
+
+  &__cell {
+
+    font-size: 20px;
+    color: $font-white;
+
+    &-container {
+      margin-right: 32px;
+      display: flex;
+      gap: 8px;
+    }
   }
 
   &__button {
@@ -101,7 +113,7 @@
     top: 0;
     left: 0;
     right: 0;
-    padding: 20px 0;
+    //padding: 20px 0;
     z-index: 999;
 
     &__container {
@@ -112,6 +124,7 @@
     
 
     &__top, &__bottom {
+      width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -128,6 +141,10 @@
 
     &__cell {
       font-size: 11px;
+
+      &-icon {
+        display: none;
+      }
     }
 
     &__button {

@@ -1,6 +1,6 @@
 nav {
-  max-width: 90%;
-  margin: 0 auto;
+  //max-width: 90%;
+  //margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,14 +13,14 @@ nav > a img {
 
 ul {
   display: flex;
-  gap: 20px;
+  gap: 24px;
   transition: .5s;
 }
 
 li a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 label {

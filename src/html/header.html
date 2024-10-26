@@ -2,9 +2,15 @@
   <div class="header__container">
     <div class="header__top">
       @@include('./logo.html', {})
-      <div class="header__cell-container">
-        <img src="@img/phone.svg" alt="" class="header__cell-icon">
-        <a href="javascript:void(0)" class="header__cell">8 812 409-52-22</a>
+      <div class="header__contacts-container">
+        <div class="header__cell-container">
+          <img src="@img/phone.svg" alt="" class="header__cell-icon">
+          <a href="javascript:void(0)" class="header__cell">8 812 409-52-22</a>
+        </div>
+        <button class="header__button">
+          ЗАДАТЬ ВОПРОС
+          <img src="@img/Arrow.svg" alt="arrow" class="header__button-arrow">
+        </button>
       </div>
     </div>
     <div class="header__bottom">
@@ -12,14 +18,6 @@
       <!-- <input type="text" class="header__input" placeholder="pla"> -->
       @@include('./searchSection.html', {})
     </div>
-    <div class="header__button-container">
-      <button class="header__button">
-        ЗАДАТЬ ВОПРОС
-        <img src="@img/Arrow.svg" alt="arrow" class="header__button-arrow">
-      </button>
-      
-    </div>
-    
   </div>
 </header>
 
