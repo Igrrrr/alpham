@@ -14,8 +14,6 @@
   }
 
   &__top {
-    
-    //background-color: green;
     display: contents;
   }
 
@@ -106,8 +104,33 @@
   order: 2
 }
 
+@media(width <= 980px) {
+  .header {
 
-@media (width <= 400px) {
+    &__container {
+      padding: 0 2rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__top, &__bottom {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__button {
+      display: none;
+    }
+  }
+
+  .logo__container {
+    max-width: 101px;
+  }
+}
+
+@media (width <= 640px) {
   .header {
     position: fixed;
     top: 0;
@@ -152,9 +175,9 @@
     }
   }
 
-  .logo__container {
-    max-width: 101px;
-  }
+  // .logo__container {
+  //   max-width: 101px;
+  // }
 
  
 }

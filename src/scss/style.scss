@@ -12,3 +12,33 @@ body {
   font-weight: 400;
   background-color: pink;
 }
+
+@media(width <= 1600px) {
+  body {
+    background-color: orange;
+  }
+}
+
+@media(width <= 1400px) {
+  body {
+    background-color: yellow;
+  }
+}
+@media(width <= 980px) {
+  body {
+    background-color: yellowgreen;
+  }
+}
+@media(width <= 640px) {
+  body {
+    background-color: aqua;
+  }
+}
+
+
+
+// 320 – 640 px
+// 640 – 980 px
+// 980 – 1400 px
+// 1400 – 1600 px
+// 1600 – большее px
