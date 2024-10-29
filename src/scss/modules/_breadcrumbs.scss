@@ -1,0 +1,25 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+
+  &-item {
+    position: relative;
+    &:hover:not(.active) {
+      color: blue;
+      text-decoration: underline;
+    }
+  }
+ 
+  &-link, &-item.active {
+    //color: $font-grey;
+  }
+    
+}
+
+@media(width <= 767px) {
+  .breadcrumb {
+    display: none;
+  }
+}
+
+    
