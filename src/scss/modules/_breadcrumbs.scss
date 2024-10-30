@@ -1,24 +1,39 @@
 .breadcrumb {
   display: flex;
   align-items: center;
+  list-style-type: none;
+  margin-left: 100px;
 
   &-item {
     position: relative;
-    &:hover:not(.active) {
-      color: blue;
-      text-decoration: underline;
-    }
+
+  & + .breadcrumb-item::before {
+    content: '>'; /* Задаем разделитель */
+    color: $font-white;
+    margin: 0 5px; /* Отступы вокруг разделителя */
+  } 
+
+  &:hover:not(.active) {
+    color: blue;
+    text-decoration: underline;
   }
- 
-  &-link, &-item.active {
-    //color: $font-grey;
+
+  &.active {
+    color: $font-white;
+    text-shadow: 0px 0px 4px rgba(215, 149, 255, 1);
   }
-    
+
+  }
+
+  &-link, .breadcrumb-item.active {
+    font-size: 12px;
+  }
 }
 
 @media(width <= 767px) {
   .breadcrumb {
-    display: none;
+    margin-top: 90px;
+    margin-left: 10px;
   }
 }
 
