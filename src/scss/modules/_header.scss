@@ -21,7 +21,7 @@
     display: flex;
     gap: 24px;
     //background-color: yellowgreen;
-    margin-top: 14px;
+    //margin-top: 14px;
     //display: contents;
   }
 
@@ -158,6 +158,10 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+
+    &__bottom {
+      margin-top: 14px;
     }
 
     &__input {
