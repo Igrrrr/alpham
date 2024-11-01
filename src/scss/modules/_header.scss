@@ -111,6 +111,14 @@
   order: 2
 }
 
+@media(width <= 1400px) {
+  .header {
+    &__cell, &__link {
+      font-size: 16px;
+    }
+  }
+}
+
 @media(width <= 980px) {
   .header {
 
